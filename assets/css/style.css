@@ -44,3 +44,18 @@ header {
     text-decoration: none;
 }
 
+
+
+
+
+.top{
+    background-image: url(../img/IMG_1072.JPG); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+.sns{
+    height: 50vh;
+}
