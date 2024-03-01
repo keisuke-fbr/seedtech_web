@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+
+    padding: 15px 40px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.nav-right{
+    display: flex;
+}
+
+.nav-right > li > a {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left > li > h2{
+    padding-left: 40px;
+    font-family: fantasy;
+}
+
+
+
+.nav-left > li > a{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
