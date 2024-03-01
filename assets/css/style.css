@@ -1,14 +1,25 @@
+.header-main1{
+    background-image: url(../img/IMG_1072.JPG),url(../img/IMG_1073.JPG),url(../img/IMG_1075.JPG); 
+    background-size: 33%,33%,34%;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: grey;
 
-    padding: 15px 40px;
+    padding: 15px 60px;
+
+    height: 15vh;
 }
 
 .logo{
-    height: 80px;
+    height: 120px;
 }
 
 .nav-right{
@@ -16,7 +27,7 @@ header {
 }
 
 .nav-right > li > a {
-    color: white;
+    color: black;
     font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
@@ -45,17 +56,39 @@ header {
 }
 
 
-
-
-
 .top{
-    background-image: url(../img/IMG_1072.JPG); 
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    height: 100vh;
+    height: 85vh;
+
 }
 
+.title1 ,.title3{
+    font-size: 7rem;
+    letter-spacing: 0.4rem;
+    color: white;
+    font-weight: 800;
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.title2{
+    font-size: 5rem;
+}
+
+
+
+
 .sns{
-    height: 50vh;
+    height: 80vh;
+    background-color: aqua;
+}
+
+footer{
+    height: 20vh;
+    background-color: aquamarine;
 }
