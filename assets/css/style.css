@@ -29,7 +29,7 @@ header {
 }
 
 .nav-right > li > a {
-    color: black;
+    color: white;
     font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
@@ -44,6 +44,7 @@ header {
     padding-left: 40px;
     font-size: 30px;
     font-family: fantasy;
+    
 }
 
 .logo{
@@ -129,10 +130,7 @@ header {
     
 }
 
-.sns>.h1{
-    background-color: red;
 
-}
 .sns >  h1{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
 
@@ -185,7 +183,16 @@ header {
     width: 120px;
 }
 
-.container>.x>h1, .container>.insta > h1{
+.container >.x > a > img:hover,.container >.insta > a > img:hover{
+    opacity: 0.5;
+}
+
+.container >.x > a > :active{
+    position: relative;
+    top: 5px;
+}
+
+.container>.x>h1, .container>.insta > h1,.container >.insta > a > img:hover{
     text-align: center;
     margin-top: 20%;
     font-size: 1.5rem;

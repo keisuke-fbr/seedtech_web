@@ -1,44 +1,13 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-/* header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #23b7fe;
-} */
 
-
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 10vh;
 
     padding: 15px 60px;
-    height: 15vh;
-
     
-}
-
-
-.nav-right{
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.nav-right > li > a {
-    color: black;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
 }
 
 .nav-left{
@@ -50,9 +19,274 @@ header{
     padding-left: 40px;
     font-size: 30px;
     font-family: fantasy;
+    color: black;
+}
+
+
+
+.nav-right{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-right > li > a{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
 }
 
 .logo{
-    height: 120px;
+    height: 80px;
 }
- */
+
+.place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+
+}
+
+.place > h1{
+    font-size: 2.5rem;
+    width: 330px;
+    text-align: center;
+
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+
+    margin-bottom: 60px;
+}
+
+.place > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    height: 200vh;
+    width: 80vw;
+
+    padding: 4em 1em;
+    margin-bottom: 100px;
+    color: black;
+    background: #f4f4f4;
+    border-top: solid 10px #2C7CFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.container > div{
+    
+    width: 40vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.pic{
+    width: 70%;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.name{
+    font-size: 25px;
+}
+
+
+
+
+.btn{
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 10%;
+    
+	padding: 1rem 4rem;
+	
+	border-radius: 100vh;
+	border-bottom: 7px solid #0686b2;
+	background: #27acd9;
+	color: #fff;
+}
+
+.btn:active {
+    margin-top: 6px;
+	border-bottom: 1px solid #0686b2;
+	color: #fff;
+}
+
+
+
+
+
+.competition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 200px;
+    
+}
+
+
+.competition > h1{
+    font-size: 2.5rem;
+    width: 200px;
+    text-align: center;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+.competition > .container2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: auto;
+    
+
+    height: 900vh;
+    width: 80vw;
+
+    padding: 4em 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: black;
+    background: #f4f4f4;
+    border-top: solid 10px #2C7CFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+}
+
+
+.match{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6%;
+
+    background-color: rgb(230, 237, 239);
+    border-radius: 15px;
+}
+
+.match > h1{
+    font-size: 1.5rem;
+}
+
+.match-last{
+    margin-bottom: 0px;
+}
+
+.match > a {
+    height: 75%;
+}
+
+.match > a > img{
+    height: 100%;
+    border-radius: 30px;
+}
+
+.match > a > img:hover{
+    opacity: 0.5;
+}
+
+.match > a > img:active{
+    position: relative;
+    top: 5px;
+}
+
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan >  h1{
+    font-size: 2.5rem;
+    width: 250px;
+    text-align: center;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+
+.plan{
+    margin-bottom: 200px;
+}
+
+
+
+.plan > div > .btn{
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #23b7fe;
+	border-radius: 100vh;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	transition: 0.5s;
+}
+
+.plan > div > .btn:hover{
+	color: #fff;
+	background: #27acd9;
+	border-bottom: 2px solid #fff;
+	transform: translateY(3px);
+}
+
+.plan > div > .btn:active{
+	position: relative;
+    top: 5px;
+}
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+
+    padding: 2vh 0px;
+    
+    text-align: center;
+}
