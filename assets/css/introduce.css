@@ -36,6 +36,10 @@ header {
     text-decoration: none;
 }
 
+.nav-right > li > a:hover{
+    color: black;
+}
+
 li{
     list-style: none;
 }
@@ -43,6 +47,9 @@ li{
 .logo{
     height: 80px;
 }
+
+
+
 
 .place{
     display: flex;
@@ -66,13 +73,26 @@ li{
     margin-bottom: 60px;
 }
 
+@media screen and (max-width:780px) {
+    .place{
+        margin-bottom: 80px;
+    }
+    
+    
+    .place > h1{
+        font-size: 1.5rem;
+        width: 200px;
+
+        margin-bottom: 30px;
+    }
+}
+
 .place > .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 
     height: 200vh;
     width: 80vw;
@@ -84,6 +104,15 @@ li{
     border-top: solid 10px #2C7CFF;
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+@media screen and (max-width:780px) {
+    .place > .container{
+        flex-direction: row;
+        height: 300vh;
+        margin-bottom: 20px;
+    }
+    
 }
 
 .container > div{
@@ -101,8 +130,6 @@ li{
 }
 
 
-
-
 .pic{
     width: 70%;
     height: 60%;
@@ -111,6 +138,29 @@ li{
 
 .name{
     font-size: 25px;
+}
+
+@media screen and (max-width:780px) {
+    .container > div{
+        width: 100%;
+        height: 40vh;
+        margin-top: 0px;
+        margin-bottom: 60px;  
+    }
+
+    .container > .kiyose{
+        margin-bottom: 0px;
+    }
+
+    .pic{
+        height: 50%;
+        width: 60%;
+    }
+
+    .name{
+        font-size: 20px;
+    }
+
 }
 
 
@@ -129,6 +179,17 @@ li{
 	border-bottom: 7px solid #0686b2;
 	background: #27acd9;
 	color: #fff;
+}
+
+@media screen and (max-width:780px) {
+    .btn{
+        padding: 0.5rem 2rem;
+        font-size: 0.7rem;
+    }
+}
+
+.btn:hover{
+    opacity: 50%;
 }
 
 .btn:active {
@@ -163,11 +224,20 @@ li{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
 
+@media screen and (max-width:780px) {
+    .competition > h1{
+        font-size: 1.5rem;
+        width: 130px;
+    }
+    
+}
+
 .competition > .container2{
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 
     margin: auto;
     
@@ -186,12 +256,19 @@ li{
 
 }
 
+@media screen and (max-width:780px){
+    .competition > .container2{
+        height: 400vh;
+    }
+}
+
 
 .match{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 6%;
+    width: 90%;
 
     background-color: rgb(230, 237, 239);
     border-radius: 15px;
@@ -206,12 +283,27 @@ li{
 }
 
 .match > a {
-    height: 75%;
+    height: 60%;
 }
 
 .match > a > img{
     height: 100%;
     border-radius: 30px;
+}
+
+
+@media screen and (max-width:780px){
+    .match > h1{
+        font-size: 0.7rem;
+    }
+    
+    .match > a {
+        height: 60%;
+    }
+    .match > a > img{
+        border-radius: 10px;
+    }
+    
 }
 
 .match > a > img:hover{
@@ -229,6 +321,8 @@ li{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    margin-bottom: 200px;
 }
 
 .plan >  h1{
@@ -240,11 +334,6 @@ li{
     margin-bottom: 50px;
 
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
-}
-
-
-.plan{
-    margin-bottom: 200px;
 }
 
 
@@ -264,6 +353,18 @@ li{
 	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
 	transition: 0.5s;
+}
+
+
+@media screen and (max-width:780px) {
+    .plan > h1{
+        font-size: 1.5rem;
+        width: 150px;
+    }
+
+    .plan > div > .btn{
+        padding: 0.5rem 1rem;
+    }
 }
 
 .plan > div > .btn:hover{
@@ -289,4 +390,11 @@ footer{
     padding: 2vh 0px;
     
     text-align: center;
+}
+
+@media screen and (max-width:780px) {
+    footer{
+        font-size: 0.5rem;
+    }
+    
 }

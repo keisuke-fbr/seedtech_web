@@ -22,8 +22,6 @@ header {
     color: black;
 }
 
-
-
 .nav-right{
     display: flex;
     justify-content: space-around;
@@ -34,6 +32,10 @@ header {
     font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
+}
+
+.nav-right > li > a:hover{
+    color: black;
 }
 
 li{
@@ -58,4 +60,11 @@ footer{
     padding: 2vh 0px;
     
     text-align: center;
+}
+
+@media screen and (max-width:780px) {
+    footer{
+        font-size: 0.5rem;
+    }
+    
 }

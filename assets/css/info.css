@@ -36,6 +36,10 @@ header {
     text-decoration: none;
 }
 
+.nav-right > li > a:hover{
+    color: black;
+}
+
 li{
     list-style: none;
 }
@@ -67,11 +71,27 @@ li{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
 
+@media screen and (max-width:780px) {
+    .info{
+        height: 40vh;
+    }
+    
+    .info > h1{
+        font-size: 1.5rem;
+        width: 130px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+}
+
 .info > .container{
-    height: 60vh;
+    position: relative;
+
+    height: 40vh;
     width: 80vw;
 
-    padding: 4em 1em;
+    /* padding: 4em 1em; */
     margin-bottom: 0px;
     margin-top: 0px;
     color: black;
@@ -82,9 +102,27 @@ li{
 
 }
 
+@media screen and (max-width:780px) {
+    .info > .container{
+        height: 30vh;
+        width: 70vw;
+    }    
+}
+
 .container > h1{
-    margin-left: 10%;
+
     font-size: 30px;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+@media screen and (max-width:780px) {
+    .container > h1{
+        font-size: 1rem;
+    }
+    
 }
 
 
@@ -93,12 +131,21 @@ li{
     justify-content: space-around;
     align-items: center;
 
-    
-    margin-top: 20%;
+    position: absolute;
+    top: 35%;
+    left: 12%;
+
+    width: 80%;
 }
 
 .sns > a > img{
-    width: 10vw;
+    height: 100px;
+}
+
+@media screen and (max-width:780px) {
+    .sns > a > img{
+        height: 50px;
+    }
 }
 
 .sns > a > img:hover{
@@ -120,4 +167,12 @@ footer{
     padding: 2vh 0px;
     
     text-align: center;
+}
+
+
+@media screen and (max-width:780px) {
+    footer{
+        font-size: 0.5rem;
+    }
+    
 }

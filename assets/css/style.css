@@ -1,9 +1,17 @@
 .header-main1{
     height: 110vh;
+    width: 100vw;
 
     position: relative;
 
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+
+}
+
+@media screen and (max-width:780px) {
+    .header-main1{
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -13,10 +21,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: 15vh;
+    width: 90vw;
+    
 
     position: absolute;
+    left: 5%;
 
     z-index: 1;
 }
@@ -25,6 +37,8 @@ header {
 .nav-right{
     display: flex;
     justify-content: space-around;
+
+    width: 100%;
     
 }
 
@@ -33,6 +47,10 @@ header {
     font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
+}
+
+.nav-right > li > a:hover{
+    color: black;
 }
 
 .nav-left{
@@ -48,9 +66,14 @@ header {
 }
 
 .logo{
-    height: 120px;
+    width: 100px;
 }
 
+@media screen and (max-width:780px) {
+    .logo{
+        width: 40px;
+    }
+}
 
 
 
@@ -60,17 +83,32 @@ header {
     position: absolute;
 }
 
+@media screen and (max-width:780px) {
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .images > img{
     display: block;
 
     height: 110vh;
-    width: 33vw;
+    width: 33.3vw;
     object-fit: cover;
 
     filter:  brightness(70%);
+}
 
-    /* filter: opacity(90%) blur(1.5px) brightness(7rem); */
+@media screen and (max-width:780px) {
+    .images > img{
+        display: block;
 
+        height: 36vh;
+        width: 100vw;
+
+        filter: brightness(40%);
+    }
 }
 
 
@@ -83,6 +121,7 @@ header {
     flex-direction: column;
 
     height: 85vh;
+    width: 100vw;
 
     position: absolute;
     top: 50%;
@@ -101,8 +140,11 @@ header {
     font-weight: 1000;
     font-family: Arial, Helvetica, sans-serif;
 
+    text-align: center;
     padding-top: 5px;
     padding-bottom: 20px;
+
+    width: 100%;
 }
 
 .letters > h2{
@@ -113,7 +155,15 @@ header {
     
 }
 
+@media screen and (max-width:780px) {
+    .letters > h1{
+        font-size: 4rem;
+    }
 
+    .letters > h2{
+        font-size: 3rem;
+    }
+}
 
 
 
@@ -121,6 +171,7 @@ header {
 .sns{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
     height: 90vh;
@@ -131,6 +182,13 @@ header {
 }
 
 
+@media screen and (max-width:780px) {
+    .sns{
+        height: 40vh;
+    }
+}
+
+
 .sns >  h1{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
 
@@ -138,10 +196,16 @@ header {
 
     width: 160px;
     text-align: center;
-    margin: auto;
+    
 
+}
 
-
+@media screen and (max-width:780px) {
+    .sns > h1{
+        font-size: 1.5rem;
+        width: 100px;
+    }
+    
 }
 
 
@@ -150,7 +214,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 
     margin: auto;
 
@@ -166,9 +229,12 @@ header {
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 
+}
 
-
-    
+.insta, .x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -183,22 +249,36 @@ header {
     width: 120px;
 }
 
+
+
 .container >.x > a > img:hover,.container >.insta > a > img:hover{
     opacity: 0.5;
 }
 
-.container >.x > a > :active{
+.container >.x > a > :active,.container >.insta > a > :active{
     position: relative;
     top: 5px;
 }
 
-.container>.x>h1, .container>.insta > h1,.container >.insta > a > img:hover{
+.x>h1, .insta > h1{
     text-align: center;
     margin-top: 20%;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
 
+}
+
+@media screen and (max-width:780px) {
+    .container > .insta > a > img, .container > .x > a > img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .x > h1 , .insta > h1{
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 
@@ -214,5 +294,13 @@ footer{
     padding: 2vh 0px;
     
     text-align: center;
+}
+
+
+@media screen and (max-width:780px) {
+    footer{
+        font-size: 0.5rem;
+    }
+    
 }
 
