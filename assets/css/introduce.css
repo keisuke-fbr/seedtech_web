@@ -22,30 +22,146 @@ header {
     color: black;
 }
 
+.logo{
+    height: 80px;
+}
+
+@media screen and (max-width:780px) {
+    .nav-left > li > a >img{
+        height: 50px;
+    }
+
+    .nav-left > li > h2{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
 
 
-.nav-right{
+nav{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
-.nav-right > li > a{
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
+.list_nav_header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (max-width:780px) {
+    .list_nav_header{
+        display: none;
+    }
+}
+
+
+.list_nav_header > li > a{
+    color: black;
     text-decoration: none;
 }
 
-.nav-right > li > a:hover{
-    color: black;
+.list_nav_header > li > a:hover{
+    color: white;
 }
 
-li{
-    list-style: none;
+
+.burger{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    background-image: url(../img/burger.png);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+    border-radius: 4px;
+    
+
+    margin-left: 80px;
+
+    position: relative;
+    z-index: 2;
 }
 
-.logo{
+@media screen and (min-width:780px) {
+    .burger{
+        display: none;
+    }
+}
+
+.burger.is-active{
+    background-image: url(../img/close.png);
+}
+
+.burger:hover{
+    background-color: grey;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #23b7fe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: none;
+}
+
+.menu.is-active{
+    display: flex;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    height: 70%;
+    width: 80%;
+
+    
+}
+
+.contents > li {
+    display: block;
+    background-color: white;
+    width: 90%;
     height: 80px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contents > li > a{
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    
+    
+    text-decoration: none;
+
+    text-align: center;
+    
+}
+
+.contents > li > a:hover{
+    color: #23b7fe;
 }
 
 
