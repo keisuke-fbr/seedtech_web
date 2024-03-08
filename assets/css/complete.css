@@ -115,7 +115,7 @@ nav{
     left: 0;
     z-index: 1;
 
-    display: none;
+    /* display: none; */
 }
 
 .menu.is-active{
@@ -162,6 +162,30 @@ nav{
 
 .contents > li > a:hover{
     color: #23b7fe;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #f4f4f4;
+    border-top: solid 10px #2C7CFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+    height: 100vh;
+}
+
+.container > h1{
+    font-size: 30px;
+}
+.container > a{
+    font-size: 30px;
 }
 
 

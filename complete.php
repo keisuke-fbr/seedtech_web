@@ -38,7 +38,6 @@ $stmt = $dbh->prepare('INSERT INTO result SET game_name=?, date=?, team1=?, team
 $stmt->execute([$game_name,$date,$team1,$team1_score,$team2,$team2_score,$scorer1,$scorer2,$scorer3,$scorer4,$scorer5]);
 
 
-unset($dbh);
 ?>
 
 
@@ -67,7 +66,7 @@ unset($dbh);
                 <li><a href="./introduce.html">活動紹介</a></li>
                 <li><a href="./result.php">結果</a></li>
                 <li><a href="./info.html">新歓情報</a></li>
-                <li><a href="./control.php">管理者ページ</a></li>
+                <li><a href="./control.html">管理者ページ</a></li>
             </ul>
 
             <div class="burger"></div>
@@ -76,7 +75,7 @@ unset($dbh);
                 <ul class="contents">
                     <li><a href="./index.html">トップページ</a></li>
                     <li><a href="./introduce.html">活動紹介</a></li>
-                    <li><a href="./result.html">結果</a></li>
+                    <li><a href="./result.php">結果</a></li>
                     <li><a href="./info.html">新歓情報</a></li>
                     <li><a href="./control.html">管理者ページ</a></li>
                 </ul>
@@ -87,10 +86,13 @@ unset($dbh);
     </header>
 
     <main>
-        <h1>登録完了</h1>
+        <div class="container">
+            <h1>登録完了</h1>
 
-        <a href="./control.php">入力画面に戻る</a>
-    
+            <a href="./control.php">入力画面に戻る</a>
+
+        </div>
+        
     </main>
 
     <footer>

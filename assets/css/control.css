@@ -115,11 +115,19 @@ nav{
     left: 0;
     z-index: 1;
 
-    display: none;
+    /* display: none; */
 }
 
 .menu.is-active{
     display: flex;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contents{
@@ -164,6 +172,42 @@ nav{
     color: #23b7fe;
 }
 
+.title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    border-top: solid 10px #2C7CFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+    height: 120vh;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.edit_btn{
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+.to_edit{
+    margin: auto;
+    padding-bottom: 10vw;
+}
 
 
 

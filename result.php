@@ -42,7 +42,7 @@ $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li><a href="./introduce.html">活動紹介</a></li>
                 <li><a href="./result.php">結果</a></li>
                 <li><a href="./info.html">新歓情報</a></li>
-                <li><a href="./control.php">管理者ページ</a></li>
+                <li><a href="./control.html">管理者ページ</a></li>
             </ul>
 
             <div class="burger"></div>
@@ -51,7 +51,7 @@ $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <ul class="contents">
                     <li><a href="./index.html">トップページ</a></li>
                     <li><a href="./introduce.html">活動紹介</a></li>
-                    <li><a href="./result.html">結果</a></li>
+                    <li><a href="./result.php">結果</a></li>
                     <li><a href="./info.html">新歓情報</a></li>
                     <li><a href="./control.html">管理者ページ</a></li>
                 </ul>
@@ -66,7 +66,7 @@ $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h1>直近10試合の試合結果</h1>
             <div class="container">
 
-                <?php foreach($records as $record): ?>
+                <?php foreach(array_reverse($records,TRUE) as $record): ?>
                 <div class="match">
                     
                     <div class="competition">

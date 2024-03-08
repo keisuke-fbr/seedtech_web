@@ -66,7 +66,7 @@ $scorer5_result = confirm($scorer5);
                 <li><a href="./introduce.html">活動紹介</a></li>
                 <li><a href="./result.php">結果</a></li>
                 <li><a href="./info.html">新歓情報</a></li>
-                <li><a href="./control.php">管理者ページ</a></li>
+                <li><a href="./control.html">管理者ページ</a></li>
             </ul>
 
             <div class="burger"></div>
@@ -75,7 +75,7 @@ $scorer5_result = confirm($scorer5);
                 <ul class="contents">
                     <li><a href="./index.html">トップページ</a></li>
                     <li><a href="./introduce.html">活動紹介</a></li>
-                    <li><a href="./result.html">結果</a></li>
+                    <li><a href="./result.php">結果</a></li>
                     <li><a href="./info.html">新歓情報</a></li>
                     <li><a href="./control.html">管理者ページ</a></li>
                 </ul>
@@ -86,39 +86,41 @@ $scorer5_result = confirm($scorer5);
     </header>
 
     <main>
+        
         <h1>入力内容確認</h1>
-        <p>大会名：<?php echo $game_name_result;?></p>
-        <p>日付：<?php echo $date_result;?></p>
-        <p>ホームチーム：<?php echo $team1_result;?></p>
-        <p>ホームチーム得点：<?php echo $team1_score_result;?></p>
-        <p>アウェイチーム：<?php echo $team2_result;?></p>
-        <p>アウェイチーム得点：<?php echo $team2_score_result;?></p>
-        <p>得点者１：<?php echo $scorer1_result;?></p>
-        <p>得点者２：<?php echo $scorer2_result;?></p>
-        <p>得点者３：<?php echo $scorer3_result;?></p>
-        <p>得点者４：<?php echo $scorer4_result;?></p>
-        <p>得点者５：<?php echo $scorer5_result;?></p>
-    
-        <form method="POST" action="./complete.php">
-            <input type="hidden" name="game_name" value="<?php echo $game_name;?>">
-            <input type="hidden" name="date" value="<?php echo $date;?>">
-            <input type="hidden" name="team1" value="<?php echo $team1;?>">
-            <input type="hidden" name="team1_score" value="<?php echo $team1_score;?>">
-            <input type="hidden" name="team2" value="<?php echo $team2;?>">
-            <input type="hidden" name="team2_score" value="<?php echo $team2_score;?>">
-            <input type="hidden" name="scorer1" value="<?php echo $scorer1;?>">
-            <input type="hidden" name="scorer2" value="<?php echo $scorer2;?>">
-            <input type="hidden" name="scorer3" value="<?php echo $scorer3;?>">
-            <input type="hidden" name="scorer4" value="<?php echo $scorer4;?>">
-            <input type="hidden" name="scorer5" value="<?php echo $scorer5;?>">
+        <div class="container">
+            <p>大会名：<?php echo $game_name_result;?></p>
+            <p>日付：<?php echo $date_result;?></p>
+            <p>ホームチーム：<?php echo $team1_result;?></p>
+            <p>ホームチーム得点：<?php echo $team1_score_result;?></p>
+            <p>アウェイチーム：<?php echo $team2_result;?></p>
+            <p>アウェイチーム得点：<?php echo $team2_score_result;?></p>
+            <p>得点者１：<?php echo $scorer1_result;?></p>
+            <p>得点者２：<?php echo $scorer2_result;?></p>
+            <p>得点者３：<?php echo $scorer3_result;?></p>
+            <p>得点者４：<?php echo $scorer4_result;?></p>
+            <p>得点者５：<?php echo $scorer5_result;?></p>
+        
+            <form method="POST" action="./complete.php">
+                <input type="hidden" name="game_name" value="<?php echo $game_name;?>">
+                <input type="hidden" name="date" value="<?php echo $date;?>">
+                <input type="hidden" name="team1" value="<?php echo $team1;?>">
+                <input type="hidden" name="team1_score" value="<?php echo $team1_score;?>">
+                <input type="hidden" name="team2" value="<?php echo $team2;?>">
+                <input type="hidden" name="team2_score" value="<?php echo $team2_score;?>">
+                <input type="hidden" name="scorer1" value="<?php echo $scorer1;?>">
+                <input type="hidden" name="scorer2" value="<?php echo $scorer2;?>">
+                <input type="hidden" name="scorer3" value="<?php echo $scorer3;?>">
+                <input type="hidden" name="scorer4" value="<?php echo $scorer4;?>">
+                <input type="hidden" name="scorer5" value="<?php echo $scorer5;?>">
 
-            <button type="button" onclick="history.back()">戻る</button>
+                <button type="button" onclick="history.back()">戻る</button>
 
-            <?php if($team1!=="" && $team1_score!=="" && $team2!=="" && $team2_score!==""):?>
-                <input type="submit" value="送信">
-            <?php endif ?>    
-        </form>
-    
+                <?php if($team1!=="" && $team1_score!=="" && $team2!=="" && $team2_score!==""):?>
+                    <input type="submit" value="送信">
+                <?php endif ?>    
+            </form>
+        </div>          
     </main>
 
     <footer>

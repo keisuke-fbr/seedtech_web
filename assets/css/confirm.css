@@ -115,7 +115,7 @@ nav{
     left: 0;
     z-index: 1;
 
-    display: none;
+    /* display: none; */
 }
 
 .menu.is-active{
@@ -163,6 +163,42 @@ nav{
 .contents > li > a:hover{
     color: #23b7fe;
 }
+
+
+
+
+h1{
+    text-align: center;
+    width: 50ww;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    height: 120vh;
+    width: 70vw;
+
+    background: #f4f4f4;
+    border-top: solid 10px #2C7CFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+}
+
+
+
+
+
 
 
 

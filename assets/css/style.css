@@ -105,6 +105,7 @@ nav{
     background-color: white;
     border-radius: 4px;
 
+
     position: relative;
     z-index: 2;
 }
@@ -139,7 +140,7 @@ nav{
     left: 0;
     z-index: 1;
 
-    display: none;
+    /* display: none; */
 }
 
 .menu.is-active{
@@ -423,4 +424,5 @@ footer{
     }
     
 }
+
 

@@ -168,49 +168,45 @@ nav{
 
 
 
-.info{
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.result > h1{
+    margin-bottom: 30px;
+
+    font-size: 2.5rem;
+    width: 500px;
+    text-align: center;
+
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+
+}
+
+@media screen and (max-width:780px) {
+    .result > h1{
+        font-size: 1.5rem;
+        width: 300px;
+    }
+    
+}
+
+.container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 100px;
-    margin-bottom: 200px;
+    height: 100vh;
+    width: 75vw;
 
-}
-
-.info > h1{
-    font-size: 2.5rem;
-    width: 250px;
-    text-align: center;
-
-    margin: auto;
-    margin-bottom: 50px;
-
-    background: linear-gradient(transparent 70%, #a7d6ff 70%);
-}
-
-@media screen and (max-width:780px) {
-    .info{
-        height: 40vh;
-    }
-    
-    .info > h1{
-        font-size: 1.5rem;
-        width: 130px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    
-}
-
-.info > .container{
-    position: relative;
-
-    height: 40vh;
-    width: 80vw;
-
-    /* padding: 4em 1em; */
+    padding: 4em 1em;
     margin-bottom: 0px;
     margin-top: 0px;
     color: black;
@@ -221,60 +217,197 @@ nav{
 
 }
 
-@media screen and (max-width:780px) {
-    .info > .container{
-        height: 30vh;
-        width: 70vw;
-    }    
-}
-
-.container > h1{
-
-    font-size: 30px;
-
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
 
 @media screen and (max-width:780px) {
-    .container > h1{
-        font-size: 1rem;
+    .container{
+        height: 70vh;
+        padding: 0;
     }
+}
+
+
+.container > form{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.match{
+
+    /* position: relative; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(219, 240, 245);
+    border-radius: 20px;
+    width: 80%;
+    height: 60vh;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:780px) {
+
+    .match{
+        height: 60%;
+    }
+}
+
+.competition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    
+    
+    background-color: #d2e8f3;
+    width: 350px;
+    height: 40%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 
 
-.sns{
+.league{
+    display: flex;
+}
+
+.league > h1{
+    font-size: 20px;
+
+}
+
+.league > input{
+    width: 60%;
+}
+
+
+
+.date{
+    display: flex;
+}
+
+
+
+@media screen and (max-width:780px) {
+    .competition{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .competition > .league > h1, .competition > .date > h1{
+        font-size: 0.5rem;
+    }
+}
+
+
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 80%;
+    height: 300px;
+}
+
+.score{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+
+    width: 100%;
+    height: 30%;
+
+    
+}
+
+.score > input{
+    display: block;
+    background: linear-gradient(transparent 70%, #95ceff 70%);
+    width: 25%;
+}
+
+.score > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    width: 40%;
+}
+
+.score > ul > li{
+    width: 30%;
+}
+
+.score > ul > li > input{
+    display: block;
+    width: 100%;
+}
+
+.score > ul > li{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.point{
+    width: 20%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.who{
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    position: absolute;
-    top: 35%;
-    left: 12%;
-
-    width: 80%;
-}
-
-.sns > a > img{
-    height: 100px;
+    width: 50%;
 }
 
 @media screen and (max-width:780px) {
-    .sns > a > img{
-        height: 50px;
+    .detail{
+        top: 50%;
+    }
+    
+    .score{
+        font-size: 1.0rem;
+    }
+
+    .score > h1{
+        font-size: 0.7rem;
+    }
+    
+    .score > ul > li{
+        font-size: 1.0rem;
+    }
+
+    .who{
+        font-size:0.7rem;
     }
 }
 
-.sns > a > img:hover{
-    opacity: 0.5;
-}
-
-.sns > a > img:active{
-    width: 10vw;
-    position: relative;
-    top: 5px;
+.id{
+    display: none;
 }
 
 

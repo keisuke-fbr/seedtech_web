@@ -115,7 +115,7 @@ nav{
     left: 0;
     z-index: 1;
 
-    display: none;
+    /* display: none; */
 }
 
 .menu.is-active{
@@ -345,12 +345,17 @@ position: relative;
     .score{
         font-size: 1.0rem;
     }
+
+    .score > h1{
+        font-size: 0.7rem;
+    }
+    
     .score > ul > li{
         font-size: 1.0rem;
     }
 
     .who{
-        font-size:0.5rem;
+        font-size:0.7rem;
     }
 }
 
